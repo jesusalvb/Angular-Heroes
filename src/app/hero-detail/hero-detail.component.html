@@ -1,0 +1,39 @@
+<div class="container mt-4" *ngIf="hero">
+  <h2>{{hero.heroName | uppercase}}</h2>
+  <div class="row">
+    <div class="form-group col-md-6">
+      <span>id: </span>{{hero.id}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-md-4">
+      <label for="realName">Real Name</label>
+      <input [(ngModel)]="hero.name" type="text" class="form-control" id="realName" aria-describedby="realNameHelp" placeholder="Real Name">
+      <small id="realNameHelp" class="form-text text-muted">Hero's Real Name</small>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="heroName">Hero Name</label>
+      <input [(ngModel)]="hero.heroName" type="text" class="form-control" id="heroName" placeholder="Hero Name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-md-4">
+      <label for="heroOccupation">Hero Occupation</label>
+      <input [(ngModel)]="hero.occupation" type="text" class="form-control" id="heroOccupation" aria-describedby="heroOccupationHelp" placeholder="Hero Occupation">
+      <small id="heroOccupationHelp" class="form-text text-muted">The Hero Occupation</small>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="heroQuirk">Quirk</label>
+      <input [(ngModel)]="hero.quirk" type="text" class="form-control" id="heroQuirk" placeholder="Hero Quirk">
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-md-4">
+      <label for="heroAffiliation">Hero Affiliation</label>
+      <input [(ngModel)]="hero.affiliation" type="text" class="form-control" id="heroAffiliation" aria-describedby="heroAffiliationHelp" placeholder="Hero Name">
+      <small id="heroAffiliationHelp" class="form-text text-muted">The Hero Name</small>
+    </div>
+    <div class="form-group col-md-4">
+    </div>
+  </div>
+</div>
