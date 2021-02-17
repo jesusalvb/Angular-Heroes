@@ -6,7 +6,9 @@
         <div class="col-md-4">
           <ul class="heroes list-group">
             <li class="list-group-item" *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.active]="hero === selectedHero">
-              <span class="badge badge-primary mx-2">{{hero.id}}</span>{{hero.heroName}}
+              <a routerLink="/detail/{{hero.id}}">
+                <span class="badge badge-primary mx-2">{{hero.id}}</span>{{hero.heroName}}
+              </a>
             </li>
           </ul>
         </div>
